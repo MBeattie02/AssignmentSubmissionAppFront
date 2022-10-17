@@ -3,6 +3,7 @@ import jwt_decode from "jwt-decode";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import AssignmentView from "./AssignmentView";
+import Register from "./Register";
 import Dashboard from "./Dashboard";
 import CodeReviewerDashboard from "./CodeReviewerDashboard";
 import Homepage from "./Homepage";
@@ -58,7 +59,9 @@ function App() {
           )
         }
       />
+      <Route path="register" element={<Register />} />
       <Route path="login" element={<Login />} />
+
       <Route path="/" element={<Homepage />} />
     </Routes>
   );

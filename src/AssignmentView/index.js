@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
-  Badge,
   Button,
   ButtonGroup,
   Col,
